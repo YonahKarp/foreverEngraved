@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+
+}
+
+body{
+    color: white;
+    background: black
+}
+
+// .lSSlideWrapper{
+//     height: calc(100vh - 100px) !important;
+//     width: 30%;
+//     position: fixed;
+//     right: 0;
+//     top: 100px;
+//     background: #333;
+// }
+
+#test{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    overflow: scroll; 
+
+    img{
+        max-height: 200px;
+        max-width:  200px;
+    }
+}

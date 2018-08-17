@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  clear: both; }
+
+.half {
+  width: 50%;
+  display: inline-block;
+  padding: 15px; }
