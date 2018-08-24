@@ -6,22 +6,14 @@ body{
     background: black;
 }
 
-#nothing{
-    font-family: 'Spectral SC', serif;
-    font-family: 'Spectral', serif;
-
-    font-family: 'Playfair Display SC', serif;
-    font-family: 'Special Elite', cursive;
-    font-family: 'Halant', serif;
-}
-
 .viewInCollection{
     border: 1px solid whitesmoke;
     padding: 1vw;
     font-size: 2vw;
     width: 20vw;
+    display: block;
     text-align: center;
-    color: white;
+    margin: 10px 0;    color: white;
     text-decoration: none;
 
     span{
@@ -40,6 +32,7 @@ body{
 
 }
 
+
 #title{
     margin-top: 100px;
     background: black;
@@ -47,7 +40,7 @@ body{
     color: whitesmoke;
     text-align: center;
     // opacity: 0;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Tangerine', cursive;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -88,24 +81,28 @@ body{
         }
 
         h4{
-            transition-delay: .8s;
+            transition-delay: .6s;
         }
 
         p{
-            transition-delay: 1.5s;
+            transition-delay: 1.2s;
         }
 
         .line{
-            transition-delay: 2.2s;
+            transition-delay: 1.8s;
 
         }
     }
 
 
     h2{
-        font-size: 10vw;
+        font-size: 15vw;
         text-shadow: 5px 6px #333;
+        margin: 3vw 0;
     }
+
+    h4{font-size: 5vw; margin: 1vw 0;}
+    p{font-size: 4vw;}
 
 }
 
@@ -116,7 +113,7 @@ body{
     transform: translateY(0);
 
     opacity: 1;
-    transition: transform 1.2s ease-in-out, opacity 1.5s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1.2s ease-in-out;
   
     &.beforeAnimated{
         transform: translateY(100px);
@@ -157,21 +154,25 @@ body{
     }
 }
 
-#jude{
-    background: url("../img/stars.jpg") center center / cover no-repeat;
+#ark{
+    background: url("../img/ark.jpg") center center / cover no-repeat;
+
     .contentContainer{
-        background: linear-gradient(115deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1));
+        background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%);
     }
-    ul, img{
-        float: right;
+
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
-#shoes{
-    background: url("../img/shoes.jpeg") center center / cover no-repeat;
+#dove{
+    background: url("../img/dove.jpg") center center / cover no-repeat;
 
     .contentContainer{
-        background: linear-gradient(55deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 1) 65%);
+        background: linear-gradient(55deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 55%);
         p{
             margin-right: 1vw
         }
@@ -187,11 +188,11 @@ body{
     }
 }
 
-#tallis{
-    background: url("../img/tallis.jpg") center center / cover no-repeat;
+#esrog{
+    background: url("../img/esrog.jpg") center center / cover no-repeat;
 
     .contentContainer{
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 1));
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 1));
     }
 
     ul, img{
@@ -199,35 +200,45 @@ body{
     }
 }
 
-#forest{
-    background: url("../img/forest.jpg") center center / cover no-repeat;
+#sea{
+    background: url("../img/sea.jpg") center center / cover no-repeat;
 
     .contentContainer{
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 43%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 0.3));
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 66%);
 
         .contentText{
             > *{
                 display: inline-block;
-                width: 32%;
+                width: 47%;
                 vertical-align: top;
             }
         }
     }
 
-    img{max-height: 50vw;}
+    img{
+        max-height: 50vw;
+        float: right;
+    }
 }
 
-#book{
-    background: url("../img/book.jpg") center center / cover no-repeat;
+#shofar{
+    background: url("../img/shofar.jpg") center center / cover no-repeat;
 
     .contentContainer{
-        background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%);
+        background: linear-gradient(25deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.3) 65%);
+        p{
+            margin-right: 1vw
+        }
     }
 
-    img{
+    img.shoesRight{
         float: right;
-        padding-right: 2vw
-        }
+        margin: -3vw -2vw
+    }
+
+    ul, img{
+        float: left;
+    }
 }
 
 #tear{

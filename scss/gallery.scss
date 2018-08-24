@@ -7,23 +7,41 @@ body{
     height: 100%;
     font-family: 'Lora', serif;
     color: white;
+    margin: 0;
 }
 
 #header.header2{
     position: relative;
+    background: rgb(20, 20, 20);
 }
 
 .content{
-    margin: 0 0 100px;
+   margin-right: 15vw;
+}
+
+.flexContainer{
+    display: flex;
+    margin-top: 10px;
 }
 
 .title{
+    @extend %fontH2;
     padding: 15px;
-    margin: 0
+    margin: 0;
+    display: none;
+}
+
+.detailsTitle{
+    margin: 0;
+}
+
+.detailsDetails{
+    display: none;
 }
 
 .imagesContainer{
     text-align: center;
+    width: 60%;
 
     .lSSlideOuter{
         overflow: unset;
@@ -33,13 +51,11 @@ body{
         // border: 5px solid #333;
         border-radius: 20px;
         box-shadow: 2px 2px 20px white;
-
     }
     #currentImgs{
     
         .slide{
-            height: 300px;
-            width: 50vw;
+           padding-bottom: 100%;
         }
     }
 
@@ -48,6 +64,7 @@ body{
 
         .active{
             position: relative;
+            text-align: center;
             &:before{
                 content: "";
                 position: absolute;
@@ -63,8 +80,8 @@ body{
 
 
 .thumbImg{
-    min-height: 50px;
-    min-width: 100%;
+    padding-bottom: 100%;
+    margin: 0 auto;
 }
 
 .half{
@@ -72,6 +89,8 @@ body{
 }
 
 .details{
+    @extend %fontDetails;
+    width: 40%;
     h3{
         margin: 0;
     }
@@ -81,6 +100,8 @@ body{
 }
 
 .fixedFooter{
+    display: none;
+
     position: fixed;
     z-index: 1000;
     bottom: 0;
@@ -88,14 +109,14 @@ body{
     transition: transform .5s;
     transform-origin: bottom;
     &:hover{
-        transform: scale(2);
+        // transform: scale(2);
     }
+
 }
 
-#sculptures{
+#sculptures, #bottomSlide{
     border-top: 1px solid #333;
     background: black;
-
 
     transition: transform 1s ease-in-out;
 
@@ -123,52 +144,67 @@ body{
     }
 }
 
-#fixedSide{
+#fixedSide, #fixedSideRegion{
     position: fixed;
+    z-index: 10;
     right: 0;
     top: 0;
-    #sideSlide{
-        height: 100%;
-        overflow: scroll; 
 
-        text-align: right;
+    border-left: 1px solid #333;
+
+    #sideSlide{
+        background: black;
+        height: 100%;
+
+
+        text-align: center;
+
+        li{
+            width: unset !important;
+            float: unset;
+        }
 
         img{
-            max-height: 200px;
-            max-width:  200px;
+            max-height: 15vw;
+            max-width:  15vw;
         }
     }
 }
 
-// @media only screen and (max-width: 600px) {
-//     .fixedFooter{
-//         .lSSlideWrapper{
-//             height: calc(100vh) !important;
-//             width: 30%;
-//             position: fixed;
-//             z-index: 200;
-//             right: 0;
-//             top: 0;
-//             background: #333;
-//         }
-//     }
-    
-//     #sculptures{
-//         border-right: 1px solid #333;
-    
-//         // transition: transform 1s ease-in-out;
-    
-//         .slide{
-//             height: 200px;
-//             // max-width: 200px;
-//             position: relative;
-//         }
-//     }
-// }
+@media only screen and (max-width: 600px) {
+    .content{
+        margin: 0 0 100px;
+    }
 
+    .flexContainer{
+        flex-direction: column;
+    }
 
+    .title, .detailsDetails, .fixedFooter{
+        display: block;
+    }
 
+    .detailsTitle, #fixedSide, #fixedSideRegion{
+        display: none;
+    }
 
+    .imagesContainer{
+        order: 1;
+    }
+
+    .details{
+        order: 99;
+    }
+
+    .details, .imagesContainer{
+        width: 100%;
+        display: block;
+    }
+
+    .contactBtn{
+        font-size: 20px !important;
+    }
+}
 
 .contactBtn{
     @extend %fontSm;
@@ -180,6 +216,7 @@ body{
     display: inline-block;
     text-align: center;
     white-space: nowrap;
+    cursor: pointer;
 
     padding: 15px 25px;
 }

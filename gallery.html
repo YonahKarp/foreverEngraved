@@ -7,9 +7,8 @@
    
   <!-- <link rel="icon" type="image/png" href="./icon.png"> -->
   <link rel="stylesheet" href="./css/lightslider.css">
-
   <link rel="stylesheet" href="./css/gallery.css">
-  <link href="https://fonts.googleapis.com/css?family=Halant|Playfair+Display+SC|Spectral|Special+Elite|Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Halant|Lora:400,700" rel="stylesheet">
 
 </head>
 <body>
@@ -17,10 +16,10 @@
     <div id="header" class="header2">
         <div class="links">
             <ul>
-                <li><a class="unStyle" href ="./about.html">Holocaust</a></li><li>
-                    <a class="unStyle" href ="./donate.html">Judaica</a></li><li>
+                <li><a class="unStyle" href ="./index.html">Holocaust</a></li><li>
+                    <a class="unStyle" href ="./judaica.html">Judaica</a></li><li>
                     <a class="unStyle" href ="./gallery.html">Gallery</a></li><li>
-                    <a class="unStyle" href ="./faqs.html">About the Artist</a></li><li>
+                    <a class="unStyle" href ="./about.html">About the Artist</a></li><li class="contactUs">
                     <a class="unStyle" href ="#contact" >Contact</a></li>
             </ul>
 
@@ -35,139 +34,47 @@
 
 
 
-    <div class="content">
-        <h2 class="title">Burning Shul</h2>
-        <div class="imagesContainer half">
-            <ul id="currentImgs">
-                <li data-thumb="img/thumbs/Shul1.jpg"><div class="slide" style="background: url(./img/mid-res2/Shul1.jpg) center center/contain no-repeat"></div></li>
-                <li data-thumb="img/thumbs/Shul2.jpg"><div class="slide" style="background: url(./img/mid-res2/Shul2.jpg) center center/contain no-repeat"></div></li>
-                <li data-thumb="img/thumbs/Shul3.jpg"><div class="slide" style="background: url(./img/mid-res2/Shul3.jpg) center center/contain no-repeat"></div></li>
-            </ul> 
-            <div class="contactBtn">Inquire About This Piece</div>
-        </div><div class="half details">
-            <h3>Details:</h3>
-            <hr>
-
-            <div class="description">
-                Stories are told of the savage way in which the Nazis gathered the men of a village into the synagouge
-                and set it ablaze as the women and children watched.
-            </div>
-            <div class="specs">
-                <hr>
-
-                <div class="specsHeader">Stone:</div>
-                <div class="specValue">Alabaster</div>
-
-                <hr>
-
-                <div class="specsHeader">Dimensions:</div>
-                <div class="specValue">17x12x26"</div>
-
-                <hr>
-
-                <div class="specsHeader">Approximate Weight:</div>
-                <div class="specValue">125lbs</div>
-            </div>
-        </div>
+    <div id="app" class="content"></div>
 
 
 
+    <div id="contactModal">
+        <div class="overlay"></div>
+        <div class="form" >
+            <p class="centerTxt font20">Interested in a piece? Let's discuss</p>
+            <div class="underline"></div>
 
-        <div class="fixedFooter">
-            <ul id='sculptures'>
-            <!--    <li>
-                    <img class="slide" src="./img/mid-res2/Shoes.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Shma.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Rose2.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Shul3.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Star1.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Tear.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Zaidy2.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Tree.jpg"/>
-                </li> -->
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Shoes.jpg) center center/contain no-repeat">
-                        <div class="slideInfo"> The Shoes of Rememberance </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Shma.jpg) center center/contain no-repeat">
-                        <div class="slideInfo"> Shema </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Rose2.jpg) center center/contain no-repeat"></div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Shul3.jpg) center center/contain no-repeat"></div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Star1.jpg) center center/contain no-repeat"></div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Tear.jpg) center center/contain no-repeat"></div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Zaidy2.jpg) center center/contain no-repeat"></div>
-                </li>
-                <li>
-                    <div class="slide" style="background: url(./img/mid-res2/Tree.jpg) center center/contain no-repeat"></div>
-                </li>
-            </ul> 
-        </div>
+            <form action="https://formspree.io/info@pnqsys.com" method="POST" id="contactForm"> 
+                <input type="hidden" name="_next" value="#thankyou" />
 
-        <div id="fixedSide">
-            <ul id='sideSlide'>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Shoes.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Shma.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Rose2.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Shul3.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Star1.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Tear.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Zaidy2.jpg"/>
-                </li>
-                <li>
-                    <img class="slide" src="./img/mid-res2/Tree.jpg"/>
-                </li>
-            </ul> 
+                <div>          
+                    <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
+                </div>
+                <div>
+                    <input type="text" name="name" placeholder="Full Name" required /><span>*</span>
+                </div>
+                <input type="number" name="phone" placeholder="Phone" maxlength="20"/>                        
+                <textarea name="message" placeholder="Message" required></textarea><span>*</span>
+                <!-- <input type="hidden" name="_next" value="#" /> -->
+                <input type="hidden" name="_subject" value="I want to learn more about ClasStars" />
+                <div class="btnContainer">
+                        <div class="rplButton">Send</div>
+                        <div class ="rplCircle"></div>
+                </div>
+            </form>
         </div>
     </div>
 
-
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
-            integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC
-                        sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
-            crossorigin="anonymous">
-    </script>
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/underscore.js"></script>
+    <script src="./lib/backbone.js"></script>
+    <script src="./lib/backbone.radio.js"></script>
+    <script src="./lib/backbone.marionette.min.js"></script>
+    <script src="./js/gallery/Templates.js"></script>
     <script src="./js/lightslider.js"></script>
+    <script src="./js/gallery/app.js"></script>
+
+    <script src="./js/form.js"></script>
     <script src="./js/gallery.js"></script>
 </body>
 </html>

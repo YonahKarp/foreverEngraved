@@ -243,19 +243,14 @@ a.unStyle {
 body {
   background: black; }
 
-#nothing {
-  font-family: 'Spectral SC', serif;
-  font-family: 'Spectral', serif;
-  font-family: 'Playfair Display SC', serif;
-  font-family: 'Special Elite', cursive;
-  font-family: 'Halant', serif; }
-
 .viewInCollection {
   border: 1px solid whitesmoke;
   padding: 1vw;
   font-size: 2vw;
   width: 20vw;
+  display: block;
   text-align: center;
+  margin: 10px 0;
   color: white;
   text-decoration: none; }
   .viewInCollection span {
@@ -273,7 +268,7 @@ body {
   min-height: 56.25vw;
   color: whitesmoke;
   text-align: center;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Tangerine', cursive;
   display: flex;
   justify-content: center;
   flex-direction: column; }
@@ -302,21 +297,27 @@ body {
   #title.animate * {
     opacity: 1; }
   #title.animate h4 {
-    transition-delay: .8s; }
+    transition-delay: .6s; }
   #title.animate p {
-    transition-delay: 1.5s; }
+    transition-delay: 1.2s; }
   #title.animate .line {
-    transition-delay: 2.2s; }
+    transition-delay: 1.8s; }
   #title h2 {
-    font-size: 10vw;
-    text-shadow: 5px 6px #333; }
+    font-size: 15vw;
+    text-shadow: 5px 6px #333;
+    margin: 3vw 0; }
+  #title h4 {
+    font-size: 5vw;
+    margin: 1vw 0; }
+  #title p {
+    font-size: 4vw; }
 
 .section {
   min-height: 56.25vw;
   position: relative;
   transform: translateY(0);
   opacity: 1;
-  transition: transform 1.2s ease-in-out, opacity 1.5s ease-in-out; }
+  transition: transform 1s ease-in-out, opacity 1.2s ease-in-out; }
   .section.beforeAnimated {
     transform: translateY(100px);
     opacity: 0; }
@@ -343,50 +344,57 @@ body {
     margin: 2vw 0;
     max-height: 28vw; }
 
-#jude {
-  background: url("../img/stars.jpg") center center/cover no-repeat; }
-  #jude .contentContainer {
-    background: linear-gradient(115deg, rgba(0, 0, 0, 0.2), black 60%, black); }
-  #jude ul, #jude img {
-    float: right; }
+#ark {
+  background: url("../img/ark.jpg") center center/cover no-repeat; }
+  #ark .contentContainer {
+    background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), black 80%); }
+  #ark img {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 
-#shoes {
-  background: url("../img/shoes.jpeg") center center/cover no-repeat; }
-  #shoes .contentContainer {
-    background: linear-gradient(55deg, black 30%, rgba(0, 0, 0, 0.3) 55%, black 65%); }
-    #shoes .contentContainer p {
+#dove {
+  background: url("../img/dove.jpg") center center/cover no-repeat; }
+  #dove .contentContainer {
+    background: linear-gradient(55deg, black 30%, rgba(0, 0, 0, 0.3) 55%); }
+    #dove .contentContainer p {
       margin-right: 1vw; }
-  #shoes img.shoesRight {
+  #dove img.shoesRight {
     float: right;
     margin: -3vw -2vw; }
-  #shoes ul, #shoes img {
+  #dove ul, #dove img {
     float: left; }
 
-#tallis {
-  background: url("../img/tallis.jpg") center center/cover no-repeat; }
-  #tallis .contentContainer {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), black 65%, black); }
-  #tallis ul, #tallis img {
+#esrog {
+  background: url("../img/esrog.jpg") center center/cover no-repeat; }
+  #esrog .contentContainer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), black 80%, black); }
+  #esrog ul, #esrog img {
     float: right; }
 
-#forest {
-  background: url("../img/forest.jpg") center center/cover no-repeat; }
-  #forest .contentContainer {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), black 43%, black 54%, rgba(0, 0, 0, 0.3)); }
-    #forest .contentContainer .contentText > * {
+#sea {
+  background: url("../img/sea.jpg") center center/cover no-repeat; }
+  #sea .contentContainer {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), black 66%); }
+    #sea .contentContainer .contentText > * {
       display: inline-block;
-      width: 32%;
+      width: 47%;
       vertical-align: top; }
-  #forest img {
-    max-height: 50vw; }
+  #sea img {
+    max-height: 50vw;
+    float: right; }
 
-#book {
-  background: url("../img/book.jpg") center center/cover no-repeat; }
-  #book .contentContainer {
-    background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), black 80%); }
-  #book img {
+#shofar {
+  background: url("../img/shofar.jpg") center center/cover no-repeat; }
+  #shofar .contentContainer {
+    background: linear-gradient(25deg, black 40%, rgba(0, 0, 0, 0.3) 65%); }
+    #shofar .contentContainer p {
+      margin-right: 1vw; }
+  #shofar img.shoesRight {
     float: right;
-    padding-right: 2vw; }
+    margin: -3vw -2vw; }
+  #shofar ul, #shofar img {
+    float: left; }
 
 #tear {
   background: url("../img/flame.jpg") center center/cover no-repeat; }

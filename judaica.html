@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sculptures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+   
+  <!-- <link rel="icon" type="image/png" href="./icon.png"> -->
+  <link rel="stylesheet" href="./css/judaica.css">
+  <link href="https://fonts.googleapis.com/css?family=Halant|Tangerine|Lora:400,700" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="header" class="header2">
+        <div class="links">
+            <ul>
+                <li><a class="unStyle" href ="./index.html">Holocaust</a></li><li>
+                    <a class="unStyle" href ="./donate.html">Judaica</a></li><li>
+                    <a class="unStyle" href ="./gallery.html">Gallery</a></li><li>
+                    <a class="unStyle" href ="./about.html">About the Artist</a></li><li class="contactUs">
+                    <a class="unStyle" href ="#contact" >Contact</a></li>
+            </ul>
+
+            <div id="menu">
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <span class="l3"></span>
+            </div>
+        </div>
+        <a href="./index.html"><img class="logo" src = "./img/logo.png" alt=""/></a>
+    </div>
+        
+
+    <div id="title">
+        <div>
+            <h2 class="headline">Forever Alive</h2>
+            <h4>A Judaica Collection</h4>
+            <p>by Tsipora Karp</p>
+            <div class="line"><span class="downCircle">▼</div></div>
+        </div>
+    </div>
+
+    <div id = "ark" class="section beforeAnimated">
+        <div class="contentContainer">
+            
+            <h1>Noah's Ark</h1>
+
+            <div class="contentText">
+                <p>
+                </p>
+                <img src="./img/mid-res2/ark.png"/>
+                <p>
+                    <i>"But G-d remembered Noah and all the wild animals and the livestock that were with him in the ark, and he sent a wind over the earth, and the waters receded"</i>
+                </p>
+                <a href="./gallery.html#id-ark"  class="viewInCollection">
+                    View in Gallery <span> > </span> 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id = "dove" class="section beforeAnimated">
+        <div class="contentContainer">
+            
+            <h1>Dove</h1>
+
+            <div class="contentText">
+                    <p>
+                        <i>"When the dove returned to Noah in the evening, there in its beak was a freshly plucked olive leaf."</i>
+                    </p>
+
+                    <a href="./gallery.html#id-dove"  class="viewInCollection">
+                        View in Gallery <span> > </span> 
+                    </a>
+                <ul>
+                    <li><img src="./img/mid-res2/Dove.png"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id = "esrog" class="section beforeAnimated">
+        <div class="contentContainer">
+            
+            <h1>Esrog</h1>
+
+            <div class="contentText">
+                <img src="./img/mid-res2/esrog.png"/>
+                <p>
+                    The Esrog (Hebrew: אֶתְרוֹג‬) is the yellow citron used by Jewish people during the week-long holiday of Sukkos, as one of the four species. Together with a lulav, hadass and aravah, the esrog is to be taken in the left hand.
+                </p>
+                <a href="./gallery.html#id-esrog"  class="viewInCollection">
+                    View in Gallery <span> > </span> 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id = "sea" class="section beforeAnimated">
+        <div class="contentContainer">
+            
+            <h1>Splitting of the Sea</h1>
+
+            <div class="contentText">
+                <div>
+                <p>
+                    The miracle of the parting of the Red Sea (keriat yam suf in Hebrew) was performed by G‑d through Moses, seven days after the Israelites’ Exodus from Egypt. Pharaoh and the Egyptian armies had pursued Israel to the water.                    
+                    <a href="./gallery.html#id-sea"  class="viewInCollection">
+                        View in Gallery <span> > </span> 
+                    </a>
+                </p>
+                </div>
+                
+                <img src="./img/mid-res2/sea.png"/>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id = "shofar" class="section beforeAnimated">
+        <div class="contentContainer">
+            
+            <h1>Shofar</h1>
+
+            <div class="contentText">
+                <p>
+                    A Shofar (שׁוֹפָר‬) is a ram's horn blown on Rosh Hashana and Yom Kippor. 
+                    As it is customary to sound a trumpet at a king's coronation,
+                    we blow the shofer on Rosh Hashanah, the day of G-d's "coronation".
+                </p>
+
+                <a href="./gallery.html#id-dove"  class="viewInCollection">
+                    View in Gallery <span> > </span> 
+                </a>
+                <ul>
+                    <li><img src="./img/mid-res2/Shofar.png"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contactModal">
+            <div class="overlay"></div>
+            <div class="form" >
+                <p class="centerTxt font20">Interested in a piece? Let's discuss</p>
+                <div class="underline"></div>
+    
+                <form action="https://formspree.io/info@pnqsys.com" method="POST" id="contactForm"> 
+                    <input type="hidden" name="_next" value="#thankyou" />
+    
+                    <div>          
+                        <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="Full Name" required /><span>*</span>
+                    </div>
+                    <input type="number" name="phone" placeholder="Phone" maxlength="20"/>                        
+                    <textarea name="message" placeholder="Message" required></textarea><span>*</span>
+                    <!-- <input type="hidden" name="_next" value="#" /> -->
+                    <input type="hidden" name="_subject" value="I want to learn more about ClasStars" />
+                    <div class="btnContainer">
+                            <div class="rplButton">Send</div>
+                            <div class ="rplCircle"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+            integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC
+                        sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+            crossorigin="anonymous">
+    </script>
+    <script src="./js/form.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>

@@ -235,7 +235,7 @@
                 if (settings.vertical) {
                     $slide.parent().addClass('vertical');
                     elSize = settings.verticalHeight;
-                    $slide.css('height', elSize);
+                    $slide.css('height', settings.vHeightTotal);
                 } else {
                     elSize = $el.outerWidth();
                 }
@@ -774,7 +774,7 @@
                             $slide.scrollLeft += 1;
                             $slide.scrollLeft -= 1;
                             // *
-                            $slide.find('.lightSlider').removeClass('lsGrab').addClass('lsGrabbing');
+                            $slide.find('.lightSlider').removeClass('lsGrab').addClass('lsGrabbing').removeClass('wasDragged');
                             clearInterval(interval);
                         }
                     });
@@ -791,7 +791,10 @@
                             endCoords = (settings.vertical === true) ? e.pageY : e.pageX;
                             var distance = endCoords - startCoords;
                             if (Math.abs(distance) >= settings.swipeThreshold) {
+                                $slide.find('.lightSlider').addClass('wasDragged')
+
                                 $(window).on('click.ls', function (e) {
+                                    $slide.find('.lightSlider').removeClass('wasDragged')
                                     if (e.preventDefault) {
                                         e.preventDefault();
                                     } else {
@@ -899,7 +902,7 @@
                 } else {
                     elSize = $children.outerHeight();
                 }
-                $slide.css('height', vHe + 'px');
+                $slide.css('height', settings.vHeightTotal);
             } else {
                 elSize = $slide.outerWidth();
             }

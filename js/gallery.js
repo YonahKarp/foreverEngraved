@@ -2,63 +2,23 @@ $(document).ready(function(){
 
 
     $(window).on("load", function() {
-        $("#currentImgs").lightSlider({
-            item: 1,
-            // autoWidth: true,
-            slideMargin: 60,
-     
-            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-            easing: 'ease-in-out', //'for jquery animation',////
-     
-            speed: 1200, //ms'
-            loop: true,
-            slideEndAnimation: false,
-            pause: 3000,
-     
-            pager: true,
-            currentPagerPosition: 'middle',
 
-            gallery: true,	
-            galleryMargin: 5,
-            thumbMargin: 10,
-            thumbItem: 5
-        }); 
-
-        $("#sculptures").lightSlider({
+        $("#bottomSlide").lightSlider({ //#sculptures
             item: 6,
             autoWidth: true,
-     
-            cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-            easing: 'ease-in-out', //'for jquery animation',////
+            easing: 'ease-in-out',
             pager: false,
             controls: false,
-
-            loop: true,
-     
-            responsive : [
-                // {
-                //     breakpoint:600,
-                //     settings: {
-                //        vertical: true,
-                //        item: 2,
-                //        autoWidth: false,
-                //     //    verticalHeight: 200,
-                //        adaptiveHeight: true,
-                //     //    vThumbWidth: 100
-
-
-
-                //       }
-                // }
-            ]
+            loop: true
         }); 
 
         $("#sideSlide").lightSlider({
-            item: 4,
+            item: 2,
             // autoWidth: true,
             slideMove: 1, // slidemove will be 1 if loop is true
             // slideMargin: 100,
             vThumbWidth: 200,
+            vHeightTotal: "100%",
             verticalHeight: 600,
 
             vertical: true,
@@ -72,16 +32,22 @@ $(document).ready(function(){
             enableTouch:true,
             enableDrag:true,
             freeMove:true,
-            swipeThreshold: 40
+            swipeThreshold: 40,
+
+            responsive : [
+                {   breakpoint:1100,
+                    settings: {item: 3}
+                }
+            ]
         }); 
     });
 
-    $(".fixedFooter").hover(function(e){
-        var origin = e.clientX + "px " + "bottom" ;
-        e.currentTarget.style.transformOrgin = origin;
-        e.currentTarget.style.WebkitTransformOrigin = origin;
-        e.currentTarget.style.msTransformOrigin = origin;
-    }, function(){})
+    // $(".fixedFooter").hover(function(e){
+    //     var origin = e.clientX + "px " + "bottom" ;
+    //     e.currentTarget.style.transformOrgin = origin;
+    //     e.currentTarget.style.WebkitTransformOrigin = origin;
+    //     e.currentTarget.style.msTransformOrigin = origin;
+    // }, function(){})
 
     //collapsed links
     var menu = $('#menu');

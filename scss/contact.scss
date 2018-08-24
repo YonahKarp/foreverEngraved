@@ -1,0 +1,155 @@
+
+#contactModal{
+  
+    &.show{    
+        
+        .overlay{
+            display: block;
+        }
+        
+        .form{
+            transition: top .6s ease-in-out;
+            top: 25%;
+        }
+    }
+  
+    .overlay{
+        display: none;
+
+       
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left:0;
+        background: rgba(17,17, 17,0.5);
+        z-index: 100;
+    }
+  
+
+    .form{
+        position: fixed;
+        top: -75%;
+        left: 15%;
+        z-index: 1001;
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        padding: 3% 2% 3% 3%;
+        border: 1px solid black;
+        background: whitesmoke;
+        color: #333;
+        box-shadow: 10px 5px 5px rgba(17,17, 17,0.5);
+    
+        .inputContainer{
+            position: relative;
+        }
+    
+        textarea{
+            border: 3px #aaa solid;
+            border-right: 1px #eee solid;
+        }
+        
+        input, textarea, select{
+            display: inline;
+            width: 90%;
+            margin: 0 auto;
+            text-indent: 15px;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+            border-radius: 5px;
+            background: transparent;
+            margin-bottom: 10px;
+            font: 16px Arial, Helvetica, sans-serif;
+            height: 45px;
+        }
+    
+        input::placeholder, textarea::placeholder{
+            color: #999999;
+    
+        }
+        input::-ms-placeholder, textarea::-ms-placeholder{
+            color: #999999;
+        }
+        input::-webkit-placeholder, textarea::-webkit-placeholder{
+            color: #999999;
+        }
+    
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    
+        input[required], textarea[required]{
+            ~ span{
+                display: none
+            }
+    
+            &:invalid ~ span{
+                display: inline;
+                color: red;
+                padding-left: 10px;
+                vertical-align: top;
+            }
+        }
+    
+        textarea{
+            resize: none;
+            height: 70px
+        }
+    
+        .btnContainer{
+            height: 40px;
+            width: 90%;
+            overflow: hidden;
+            display: block;
+        }
+            
+        .rplButton{
+            margin: 0 auto 25px; 
+            color:white;
+            background-color: teal;
+            height: inherit;
+            width: 100%;
+            font-size: 14pt;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+    .attention:invalid{
+        background-color: rgb(221, 58, 58) !important;
+
+        & ~ .floating-label{
+            background-color: rgb(221, 58, 58) !important;
+            color: white;
+        }
+
+        & ~ label{
+            color: rgb(221, 58, 58) !important;
+        }
+    }
+
+    input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+        top: -5px;
+        font-size: 10px;
+        opacity: 1;
+        padding: 0 5px;
+    }
+
+    .floating-label {
+        position: absolute;
+        display: inline-block;
+        color: #777;
+
+        @extend %fontSm;
+
+        pointer-events: none;
+        left: 20px;
+        top: 7px;
+        transition: 0.2s ease top, 0.2s ease font-size, ;
+    }
+  }
