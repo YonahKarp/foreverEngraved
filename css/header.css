@@ -20,12 +20,34 @@
   #header .links ul li a {
     font-size: 5.5vw; } }
 
+#contactModal .floating-label {
+  font-size: 15pt; }
+
+#header .links ul li a {
+  font-size: 18pt; }
+
+.fontFine {
+  font-size: 11pt; }
+
+/* adjust fonts */
+@media only screen and (max-width: 620px) {
+  #contactModal .floating-label {
+    font-size: 12pt; } }
+
+@media only screen and (max-width: 450px) {
+  #contactModal .floating-label {
+    font-size: 3.5vw; }
+  .fontFine {
+    font-size: 9pt; }
+  #header .links ul li a {
+    font-size: 5.5vw; } }
+
 #contactModal.show .overlay {
   display: block; }
 
 #contactModal.show .form {
   transition: top .6s ease-in-out;
-  top: 25%; }
+  top: 15%; }
 
 #contactModal .overlay {
   display: none;
@@ -35,13 +57,13 @@
   right: 0;
   left: 0;
   background: rgba(17, 17, 17, 0.5);
-  z-index: 100; }
+  z-index: 10000; }
 
 #contactModal .form {
   position: fixed;
-  top: -75%;
+  top: -100%;
   left: 15%;
-  z-index: 1001;
+  z-index: 10001;
   display: block;
   width: 60%;
   margin: 0 auto;
