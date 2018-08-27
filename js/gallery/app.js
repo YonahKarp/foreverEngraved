@@ -23,7 +23,21 @@
         attributes: {
             id: "bottomSlide"
         },
-        childView: FixedBottomImageView
+
+        events: {
+            "click .clone" : "chooseClone"
+        },
+
+        childView: FixedBottomImageView,
+
+        chooseClone: function(e){
+            var id = e.currentTarget.firstElementChild.dataset.id;
+            console.log("clicked clone " + id)
+            if(!$("#sideSlide").hasClass("wasDragged")){
+                var selectedPiece = this.collection.find(e => e.id === id)
+                Backbone.Radio.channel('ui').request('update:model', selectedPiece);
+            }      
+        }
     });
 
     var FixedSideImageView = Mn.View.extend({
@@ -47,7 +61,21 @@
         attributes: {
             id: "sideSlide"
         },
-        childView: FixedSideImageView
+        childView: FixedSideImageView,
+
+        events: {
+            "click .clone" : "chooseClone"
+        },
+
+        chooseClone: function(e){
+            var id = e.currentTarget.firstElementChild.dataset.id;
+            console.log("clicked clone " + id)
+            if(!$("#sideSlide").hasClass("wasDragged")){
+                var selectedPiece = this.collection.find(e => e.id === id)
+                Backbone.Radio.channel('ui').request('update:model', selectedPiece);
+            }      
+        }
+
     });
 
     var ImageView = Mn.View.extend({
@@ -210,7 +238,7 @@ function getData(currentId){
                 id: "shul",
                 title: "Burning Shul",
                 description: "Stories are told of the savage way in which the Nazis gathered the men of a village into the synagouge and set it ablaze as the women and children watched.",
-                images:[{url:"Shul1.jpg"},{url:"Shul2.jpg"},{url:"Shul3.jpg"}],
+                images:[{url:"Shul1.jpg"},{url:"Shul2.jpg"},{url:"Shul3.jpg"},{url:"Shul4.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -230,7 +258,7 @@ function getData(currentId){
                 id: "jude",
                 title: "Jude",
                 description: "Jews throughout Nazi-occupied Europe were forced to wear a badge in the form of a Yellow Star as a means of identification. The star was intended to humiliate Jews and to mark them out for segregation and discrimination. ",
-                images:[{url:"Star1.jpg"},{url:"Star2.jpg"}],
+                images:[{url:"Star1.jpg"},{url:"Star2.jpg"},{url:"Star3.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -250,7 +278,7 @@ function getData(currentId){
                 id: "shoes",
                 title: "The Shoes of Rememberance",
                 description: "Thousands of pairs all covered the feet of Jewish men, women and children before they were sent to the Nazi gas chambers. Chilling evidence of so many people obeying the command to remove their footwear, likely not knowing what was about to happen to them",
-                images:[{url:"Shoes.jpg"}],
+                images:[{url:"Shoes.jpg"},{url:"Shoes2.jpg"},{url:"Shoes3.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -290,7 +318,7 @@ function getData(currentId){
                 id: "forest",
                 title: "Hiding in the Forest",
                 description: "Many Jews fled to nearby forests to escape the grasp of the Nazis.",
-                images:[{url:"Tree.jpg"}],
+                images:[{url:"Tree.jpg"},{url:"Tree2.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -350,7 +378,7 @@ function getData(currentId){
                 id: "butterfly",
                 title: "The Yellow Butterfly",
                 description: "There is a poem, written by Pavel Friedmann of the Theresienstadt Ghetto, named <br>\"The Butterfly\": \" He was the last, truly the last <br> such yellowness was bitter and blinding...\" <br> This poem was the source of inspiration for this sculpture. (Sculpture is pictured here without the barbed wire antennae)",
-                images:[{url:"Butterfly.jpg"}],
+                images:[{url:"Butterfly.jpg"},{url:"Butterfly2.jpg"},{url:"Butterfly3.jpg"},{url:"Butterfly4.jpg"},{url:"Butterfly5.jpg"},{url:"Butterfly6.jpg"},{url:"Butterfly7.jpg"},{url:"Butterfly8.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -370,7 +398,7 @@ function getData(currentId){
                 id: "pajama",
                 title: "The Striped Pajama",
                 description: "On arrival at concentration camps jews had their clothing stripped away and replaced by a striped uniform. The uniform played a role in dehumanizing the prisoners, taking away thier individuality.",
-                images:[{url:"Striped.jpg"}],
+                images:[{url:"Striped.jpg"},{url:"Pajama2.jpg"},],
                 specs: [
                     {
                         header: "Stone",
@@ -386,11 +414,33 @@ function getData(currentId){
                     }
                 ]
             },
+
+            {
+                id: "dress",
+                title: "Stolen innocence",
+                description: "",
+                images:[{url:"Dress.jpg"}],
+                specs: [
+                    {
+                        header: "Stone",
+                        value: "Peach Alabaster"
+                    },
+                    {
+                        header: "Dimensions",
+                        value: "10x6x15\""
+                    },
+                    {
+                        header: "Approximate Weight",
+                        value: "75lbs"
+                    }
+                ]
+            },
+
             {
                 id: "rose",
                 title: "A Rose Amongst Thorns",
                 description: " My Grandparents, survivors of the holocaust, named their first child \"Rose Bertha\" (Raizel Breindel) after both of their mothers.",
-                images:[{url:"Rose1.jpg"}],
+                images:[{url:"Rose1.jpg"},{url:"Rose2.jpg"},{url:"Rose3.jpg"},{url:"Rose4.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -410,7 +460,7 @@ function getData(currentId){
                 id: "shema",
                 title: "Shema",
                 description: "Many people died in the war with the prayer \"Shema Yisroel\" on their lips. This is a memorial to them and to the individuals who say it today.",
-                images:[{url:"Shma.jpg"}],
+                images:[{url:"Shma.jpg"},{url:"Shma2.jpg"},],
                 specs: [
                     {
                         header: "Stone",
@@ -430,7 +480,7 @@ function getData(currentId){
                 id: "zaidy",
                 title: "Zaidy's Hand",
                 description: "The flames are shaped like the hebrew letter ש, and together it spells \"שש\", or the hebrew word for \"six\", to represent the 6 million. (שש Also means marble) The hand is a cast of my grandfather's hand with the actual numbers he was given during the holocaust",
-                images:[{url:"Zaidy1.jpg"},{url:"Zaidy2.jpg"}],
+                images:[{url:"Zaidy1.jpg"},{url:"Zaidy2.jpg"},{url:"Zaidy3.jpg"},{url:"Zaidy4.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -448,6 +498,50 @@ function getData(currentId){
             },
 
             //Judaica Pieces
+            {
+                id: "israel",
+                title: "The Center of the World",
+                description: "",
+                images:[{url:"Israel1.jpg"},{url:"Israel2.jpg"}],
+                specs: [
+                    {
+                        header: "Stone",
+                        value: "Blue Onyx and Genuine Yellow Topaz"
+                    },
+                    {
+                        header: "Dimensions",
+                        value: "8x8x28\""
+                    },
+                    {
+                        header: "Approximate Weight",
+                        value: "150lbs"
+                    }
+                ]
+            },
+
+            {
+                id: "pomegranate",
+                title: "Pomegranate",
+                description: "",
+                images:[{url:"Pomegranate.jpg"}],
+                specs: [
+                    {
+                        header: "Stone",
+                        value: "Raspberry Alabaster"
+                    },
+
+                    {
+                        header: "Dimensions",
+                        value: "18x18x12\""
+                    },
+                    {
+                        header: "Approximate Weight",
+                        value: "80lbs"
+                    }
+
+                ]
+            },
+
             {
                 id: "ark",
                 title: "Noah's Ark",
@@ -473,7 +567,7 @@ function getData(currentId){
                 id: "bush",
                 title: "The Burning Bush",
                 description: "",
-                images:[{url:"Bush.jpg"}],
+                images:[{url:"Bush.jpg"},{url:"Bush2.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -494,7 +588,7 @@ function getData(currentId){
                 id: "dove",
                 title: "Dove",
                 description: "",
-                images:[{url:"Dove.jpg"}],
+                images:[{url:"Dove.jpg"},{url:"Dove2.jpg"},{url:"Dove3.jpg"}],
                 specs: [
                     {
                         header: "Stone",
@@ -573,7 +667,48 @@ function getData(currentId){
                     }
                 ]
             },
+
+            {
+                id: "candles",
+                title: "Candles",
+                description: "",
+                images:[{url:"Candles1.jpg"},{url:"Candles2.jpg"}],
+                specs: [
+                    {
+                        header: "Stone",
+                        value: "Alabaster"
+                    },
+                    {
+                        header: "Dimensions",
+                        value: "20x12x18\""
+                    },
+                    {
+                        header: "Approximate Weight",
+                        value: "80lbs"
+                    }
+                ]
+            },
             
+            {
+                id: "whale",
+                title: "Jonah and the Whale",
+                description: "",
+                images:[{url:"Whale.jpg"}],
+                specs: [
+                    {
+                        header: "Stone",
+                        value: "Blue Alabaster"
+                    },
+                    {
+                        header: "Dimensions",
+                        value: "13x6x6\""
+                    },
+                    {
+                        header: "Approximate Weight",
+                        value: "80lbs"
+                    }
+                ]
+            },
         ]
     
     }

@@ -38,11 +38,11 @@ Templates.image = _.template(`
 `);
 
 Templates.sideImage = _.template(`
-    <img class="slide" src="./img/mid-res/<%= images[0].url %>"/>
+    <img data-id="<%=id%>" class="slide" src="./img/mid-res2/<%= images[0].url %>"/>
 `)
 
 Templates.bottomImage = _.template(`
-<div class="slide" style="background: url(./img/mid-res2/<%= images[0].url %>) center center/contain no-repeat"></div>
+<div data-id="<%=id%>" class="slide" style="background: url(./img/mid-res2/<%= images[0].url %>) center center/contain no-repeat"></div>
 `)
 
 Templates.side = _.template(`
