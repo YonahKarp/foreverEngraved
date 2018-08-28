@@ -418,7 +418,7 @@ function getData(currentId){
             {
                 id: "dress",
                 title: "Stolen innocence",
-                description: "",
+                description: " Children were especially vulnerable to Nazi murder or death in the era of the Holocaust. In the ghettos and camps, Jewish children died from starvation and exposure. The Nazis were indifferent to this mass death because they considered Jewish children to be unproductive and hence \"useless eaters\".",
                 images:[{url:"Dress.jpg"}],
                 specs: [
                     {
@@ -501,7 +501,7 @@ function getData(currentId){
             {
                 id: "israel",
                 title: "The Center of the World",
-                description: "",
+                description: "The Talmud teaches that Israel is the center of the world, the gateway to the heavens and, the foundation from where the earth's creation began. Jerusalem is said to be directly beneath where G-d resides in the heavens",
                 images:[{url:"Israel1.jpg"},{url:"Israel2.jpg"}],
                 specs: [
                     {
@@ -522,7 +522,7 @@ function getData(currentId){
             {
                 id: "pomegranate",
                 title: "Pomegranate",
-                description: "",
+                description: "Grown in the Mediteranean, the Pomegranate is a fruit steeped in an Jewish symbolism and tradition. It has appeared on the ancient pillars and coins of Judea. Jewish tradition teaches that it's seeds number 613, corresponding to the 613 commandments of the Torah. For this reason it is customary to eat pomegranates on Rosh Hashana",
                 images:[{url:"Pomegranate.jpg"}],
                 specs: [
                     {
@@ -670,7 +670,7 @@ function getData(currentId){
 
             {
                 id: "candles",
-                title: "Candles",
+                title: "Lighting Shabbos Candles",
                 description: "",
                 images:[{url:"Candles1.jpg"},{url:"Candles2.jpg"}],
                 specs: [

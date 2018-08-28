@@ -154,6 +154,45 @@ body{
     }
 }
 
+#pomegranate{
+    background: url("../img/pomegranate.jpg") center center / cover no-repeat;
+
+    .contentContainer{
+        background: linear-gradient(160deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%);
+
+        .contentText{
+            > *{
+                display: inline-block;
+                width: 47%;
+                vertical-align: top;
+            }
+        }
+    }
+
+    img{
+        max-height: 50vw;
+        float: right;
+    }
+}
+
+#israel{
+    background: url("../img/israel.jpg") center center / cover no-repeat;
+
+    .contentContainer{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 43%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 0.3));
+
+        .contentText{
+            > *{
+                display: inline-block;
+                width: 32%;
+                vertical-align: top;
+            }
+        }
+    }
+
+    img{max-height: 50vw;}
+}
+
 #ark{
     background: url("../img/ark.jpg") center center / cover no-repeat;
 
@@ -241,147 +280,43 @@ body{
     }
 }
 
-#tear{
-    background: url("../img/flame.jpg") center center / cover no-repeat;
+#candles{
+    background: url("../img/candles.jpg") center center / cover no-repeat;
 
     .contentContainer{
-        background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 43%, rgba(0, 0, 0, 1));
+        background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) 80%);
+
         .contentText{
-            float: right;
-            width: 40%;
-            margin-right: 2%;
+            > *{
+                display: inline-block;
+                width: 47%;
+                vertical-align: top;
+            }
         }
     }
-    img{max-height: 50vw;}
+
+    img{
+        max-height: 50vw;
+        float: right;
+    }
 }
 
-#butterfly{
-    background: url("../img/yellow.jpg") center center / cover no-repeat;
+#whale{
+    background: url("../img/whale.jpg") 80% center / cover no-repeat;
 
     .contentContainer{
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 1));
+        background: linear-gradient(55deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.3) 35%);
+        p{
+            margin-right: 1vw
+        }
     }
 
-    .contentText{
-        padding: 0 0 2vw 2vw;
-        p{ font-size: 2.2vw;}
+    img.shoesRight{
+        float: right;
+        margin: -3vw -2vw
     }
 
     ul, img{
-        float: right;
-    }
-
-    img{max-height: 50vw;}
-}
-
-#pajama{
-    background: url("../img/pajama.jpeg") center center / cover no-repeat;
-
-    .contentContainer{
-        background: linear-gradient(80deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1));
-        .contentText{
-            float: right;
-            width: 40%;
-            margin-right: 2%;
-
-            p{
-                font-size: 2.3vw;
-            }
-        }
-    }
-    img{max-height: 50vw;}
-}
-
-#rose{
-    background: url("../img/rose.jpg") 0% center / cover no-repeat;
-    .contentContainer{
-        background: linear-gradient(115deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1));
-    }
-    ul, img{
-        float: right;
-    }
-
-    .testBlur{
-        box-shadow: 5vw 5vw 11vw 0 black inset, -5vw -5vw 11vw 0 black inset;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 23vw;
-        width: 28vw;
-        float: right;
-    }
-}
-
-#shma{
-    background: url("../img/shma.jpg") center center / cover no-repeat;
-
-    .contentContainer{
-        background: linear-gradient(80deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1));
-        .contentText{
-            float: right;
-            width: 40%;
-            margin-right: 2%;
-
-            p{
-                font-size: 2.3vw;
-            }
-        }
-    }
-    img{max-height: 50vw;}
-}
-
-#burningShul{
-    background: url("../img/burningShul.jpg") center center / cover no-repeat;
-
-    .contentContainer{
-        background: linear-gradient(-190deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1));
-    }
-
-    .right{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-
-    .testBlur{
-        box-shadow: 5vw 5vw 10vw 0 black inset, -5vw -5vw 10vw 0 black inset;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 32vw;
-        width: 21vw;
-    }
-}
-
-#zaidy{
-    background: url("../img/zaidy.png") center center / cover no-repeat;
-
-    .contentContainer{
-        background: linear-gradient(40deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1));
-        // display: flex;
-        // flex-direction: column;
-
-        // .flexRow{
-        //     display: flex;
-        //     flex-direction: row;
-        // }
-        .contentText{
-            width: 60%;
-            margin-right: 2%;
-            display: inline-block;
-            vertical-align: top;
-
-            p{
-                font-size: 2.3vw;
-            }
-        }
-    }
-    img{max-height: 50vw;}
-
-    .clearfix{
-        clear: both;
-    }
-
-    .bottomImg{
-        max-width: 50vw;
-        float: right;
+        float: left;
     }
 }

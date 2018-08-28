@@ -447,6 +447,13 @@ body {
   #pajama img {
     max-height: 50vw; }
 
+#dress {
+  background: url("../img/dress.jpg") 0% center/cover no-repeat; }
+  #dress .contentContainer {
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), black 70%, black); }
+  #dress ul, #dress img {
+    float: right; }
+
 #rose {
   background: url("../img/rose.jpg") 0% center/cover no-repeat; }
   #rose .contentContainer {

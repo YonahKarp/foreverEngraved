@@ -273,12 +273,20 @@ body{
             width: 40%;
             margin-right: 2%;
 
-            p{
-                font-size: 2.3vw;
-            }
+            p{font-size: 2.3vw;}
         }
     }
     img{max-height: 50vw;}
+}
+
+#dress{
+    background: url("../img/dress.jpg") 0% center / cover no-repeat;
+    .contentContainer{
+        background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 1));
+    }
+    ul, img{
+        float: right;
+    }
 }
 
 #rose{
@@ -345,13 +353,7 @@ body{
 
     .contentContainer{
         background: linear-gradient(40deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1));
-        // display: flex;
-        // flex-direction: column;
 
-        // .flexRow{
-        //     display: flex;
-        //     flex-direction: row;
-        // }
         .contentText{
             width: 60%;
             margin-right: 2%;
