@@ -9,7 +9,7 @@ $colorYellow: #fcfdcd;
 $colorGrey: rgb(55, 55, 55);
 
 
-%fontDetails{font-size: 2vw}
+%fontDetails{font-size: 14pt}
 %fontSm{font-size: 15pt;}
 %fontStnd{font-size: 18pt;}
 %fontDblSm{font-size: 36pt}
@@ -25,7 +25,7 @@ $colorGrey: rgb(55, 55, 55);
 
 @media only screen and (max-width: 900px) {
     %fontH2{font-size: 28pt;}
-    %fontDetails{font-size: 2.5vw}
+    %fontDetails{font-size: 12pt}
 
 }
 

@@ -62,10 +62,12 @@
 #contactModal .form {
   position: fixed;
   top: -100%;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10001;
   display: block;
   width: 60%;
+  min-width: 400px;
   margin: 0 auto;
   padding: 3% 2% 3% 3%;
   border: 1px solid black;
@@ -366,14 +368,14 @@ body {
     max-height: 28vw; }
 
 #jude {
-  background: url("../img/stars.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/stars.jpg") center center/cover no-repeat; }
   #jude .contentContainer {
     background: linear-gradient(115deg, rgba(0, 0, 0, 0.2), black 60%, black); }
   #jude ul, #jude img {
     float: right; }
 
 #shoes {
-  background: url("../img/shoes.jpeg") center center/cover no-repeat; }
+  background: url("../img/bgs/shoes.jpeg") center center/cover no-repeat; }
   #shoes .contentContainer {
     background: linear-gradient(55deg, black 30%, rgba(0, 0, 0, 0.3) 55%, black 65%); }
     #shoes .contentContainer p {
@@ -385,14 +387,14 @@ body {
     float: left; }
 
 #tallis {
-  background: url("../img/tallis.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/tallis.jpg") center center/cover no-repeat; }
   #tallis .contentContainer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), black 65%, black); }
   #tallis ul, #tallis img {
     float: right; }
 
 #forest {
-  background: url("../img/forest.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/forest.jpg") center center/cover no-repeat; }
   #forest .contentContainer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), black 43%, black 54%, rgba(0, 0, 0, 0.3)); }
     #forest .contentContainer .contentText > * {
@@ -403,7 +405,7 @@ body {
     max-height: 50vw; }
 
 #book {
-  background: url("../img/book.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/book.jpg") center center/cover no-repeat; }
   #book .contentContainer {
     background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), black 80%); }
   #book img {
@@ -411,7 +413,7 @@ body {
     padding-right: 2vw; }
 
 #tear {
-  background: url("../img/flame.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/flame.jpg") center center/cover no-repeat; }
   #tear .contentContainer {
     background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.2) 43%, black); }
     #tear .contentContainer .contentText {
@@ -422,7 +424,7 @@ body {
     max-height: 50vw; }
 
 #butterfly {
-  background: url("../img/yellow.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/yellow.jpg") center center/cover no-repeat; }
   #butterfly .contentContainer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), black 65%, black); }
   #butterfly .contentText {
@@ -435,7 +437,7 @@ body {
     max-height: 50vw; }
 
 #pajama {
-  background: url("../img/pajama.jpeg") center center/cover no-repeat; }
+  background: url("../img/bgs/pajama.jpeg") center center/cover no-repeat; }
   #pajama .contentContainer {
     background: linear-gradient(80deg, black 40%, rgba(0, 0, 0, 0.5) 60%, black); }
     #pajama .contentContainer .contentText {
@@ -448,14 +450,14 @@ body {
     max-height: 50vw; }
 
 #dress {
-  background: url("../img/dress.jpg") 0% center/cover no-repeat; }
+  background: url("../img/bgs/dress.jpg") 0% center/cover no-repeat; }
   #dress .contentContainer {
     background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), black 70%, black); }
   #dress ul, #dress img {
     float: right; }
 
 #rose {
-  background: url("../img/rose.jpg") 0% center/cover no-repeat; }
+  background: url("../img/bgs/rose.jpg") 0% center/cover no-repeat; }
   #rose .contentContainer {
     background: linear-gradient(115deg, rgba(0, 0, 0, 0.2), black 60%, black); }
   #rose ul, #rose img {
@@ -469,7 +471,7 @@ body {
     float: right; }
 
 #shma {
-  background: url("../img/shma.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/shma.jpg") center center/cover no-repeat; }
   #shma .contentContainer {
     background: linear-gradient(80deg, black 40%, rgba(0, 0, 0, 0.5) 60%, black); }
     #shma .contentContainer .contentText {
@@ -482,7 +484,7 @@ body {
     max-height: 50vw; }
 
 #burningShul {
-  background: url("../img/burningShul.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/burningShul.jpg") center center/cover no-repeat; }
   #burningShul .contentContainer {
     background: linear-gradient(-190deg, rgba(0, 0, 0, 0.2), black 60%, black); }
   #burningShul .right {
@@ -496,7 +498,7 @@ body {
     width: 21vw; }
 
 #zaidy {
-  background: url("../img/zaidy.png") center center/cover no-repeat; }
+  background: url("../img/bgs/zaidy.jpg") center center/cover no-repeat; }
   #zaidy .contentContainer {
     background: linear-gradient(40deg, black 40%, rgba(0, 0, 0, 0.5) 50%, black); }
     #zaidy .contentContainer .contentText {

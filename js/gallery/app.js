@@ -122,10 +122,6 @@
             imagesRegion: "#imagesRegion"
         }, 
 
-        events:{
-            "click .contactBtn" : "openContactModal"
-        },
-
         onRender: function(){
             this.getRegion("imagesRegion").show(
                 new ImagesView({
@@ -133,12 +129,6 @@
                 })
             );
         },
-
-        openContactModal: function(){
-            $("#contactModal").addClass("show");
-            $('#menu').removeClass('open');
-            $('.links ul').removeClass('open');
-        }
     });
 
 
@@ -150,6 +140,10 @@
         regions: {
             specsRegion: "#specsRegion"
         },
+
+        events:{
+            "click .contactBtn" : "openContactModal"
+        },
         
         onRender: function(){
             this.getRegion("specsRegion").show(
@@ -157,6 +151,12 @@
                     collection: new Backbone.Collection(this.model.get("currentPiece").specs)
                 })
             );
+        },
+
+        openContactModal: function(){
+            $("#contactModal").addClass("show");
+            $('#menu').removeClass('open');
+            $('.links ul').removeClass('open');
         }
     })
 

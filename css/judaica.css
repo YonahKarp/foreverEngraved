@@ -62,10 +62,12 @@
 #contactModal .form {
   position: fixed;
   top: -100%;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10001;
   display: block;
   width: 60%;
+  min-width: 400px;
   margin: 0 auto;
   padding: 3% 2% 3% 3%;
   border: 1px solid black;
@@ -367,7 +369,7 @@ body {
     max-height: 28vw; }
 
 #pomegranate {
-  background: url("../img/pomegranate.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/pomegranate.jpg") center center/cover no-repeat; }
   #pomegranate .contentContainer {
     background: linear-gradient(160deg, rgba(0, 0, 0, 0.2), black 80%); }
     #pomegranate .contentContainer .contentText > * {
@@ -379,7 +381,7 @@ body {
     float: right; }
 
 #israel {
-  background: url("../img/israel.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/israel.jpg") center center/cover no-repeat; }
   #israel .contentContainer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), black 43%, black 54%, rgba(0, 0, 0, 0.3)); }
     #israel .contentContainer .contentText > * {
@@ -390,7 +392,7 @@ body {
     max-height: 50vw; }
 
 #ark {
-  background: url("../img/ark.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/ark.jpg") center center/cover no-repeat; }
   #ark .contentContainer {
     background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), black 80%); }
   #ark img {
@@ -399,7 +401,7 @@ body {
     right: 0; }
 
 #dove {
-  background: url("../img/dove.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/dove.jpg") center center/cover no-repeat; }
   #dove .contentContainer {
     background: linear-gradient(55deg, black 30%, rgba(0, 0, 0, 0.3) 55%); }
     #dove .contentContainer p {
@@ -411,14 +413,14 @@ body {
     float: left; }
 
 #esrog {
-  background: url("../img/esrog.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/esrog.jpg") center center/cover no-repeat; }
   #esrog .contentContainer {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), black 80%, black); }
   #esrog ul, #esrog img {
     float: right; }
 
 #sea {
-  background: url("../img/sea.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/sea.jpg") center center/cover no-repeat; }
   #sea .contentContainer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), black 66%); }
     #sea .contentContainer .contentText > * {
@@ -430,7 +432,7 @@ body {
     float: right; }
 
 #shofar {
-  background: url("../img/shofar.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/shofar.jpg") center center/cover no-repeat; }
   #shofar .contentContainer {
     background: linear-gradient(25deg, black 40%, rgba(0, 0, 0, 0.3) 65%); }
     #shofar .contentContainer p {
@@ -442,7 +444,7 @@ body {
     float: left; }
 
 #candles {
-  background: url("../img/candles.jpg") center center/cover no-repeat; }
+  background: url("../img/bgs/candles.jpg") center center/cover no-repeat; }
   #candles .contentContainer {
     background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), black 80%); }
     #candles .contentContainer .contentText > * {
@@ -454,7 +456,7 @@ body {
     float: right; }
 
 #whale {
-  background: url("../img/whale.jpg") 80% center/cover no-repeat; }
+  background: url("../img/bgs/whale.jpg") 80% center/cover no-repeat; }
   #whale .contentContainer {
     background: linear-gradient(55deg, black 10%, rgba(0, 0, 0, 0.3) 35%); }
     #whale .contentContainer p {

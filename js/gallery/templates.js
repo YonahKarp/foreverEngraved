@@ -15,7 +15,6 @@ Templates.currentPiece = _.template(`
 
 Templates.imageContainer = _.template(`
     <div id="imagesRegion"></div>
-    <div class="contactBtn">Inquire About This Piece</div>
 `)
 
 Templates.details = _.template(`
@@ -24,13 +23,15 @@ Templates.details = _.template(`
     <hr>
     <div class="description"><%= currentPiece.description %></div>
     <div id="specsRegion"></div>
+    <div class="contactBtn">Inquire About This Piece</div>
+
 `);
 
 
 Templates.specs = _.template(`
     <hr>
-    <div class="specsHeader"><%= header %>:</div>
-    <div class="specValue"><%= value %></div>
+    <span class="specsHeader"><%= header %>:</span>
+    <span class="specValue"><%= value %></span>
 `);
 
 Templates.image = _.template(`

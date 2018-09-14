@@ -1,5 +1,7 @@
 @import './header.scss';
 
+$imgPrefix: "../img/bgs/";
+
 * {box-sizing:border-box}
 
 body{
@@ -155,7 +157,7 @@ body{
 }
 
 #pomegranate{
-    background: url("../img/pomegranate.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "pomegranate.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(160deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%);
@@ -176,7 +178,7 @@ body{
 }
 
 #israel{
-    background: url("../img/israel.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "israel.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 43%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 0.3));
@@ -194,7 +196,7 @@ body{
 }
 
 #ark{
-    background: url("../img/ark.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "ark.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: radial-gradient(at top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%);
@@ -208,7 +210,7 @@ body{
 }
 
 #dove{
-    background: url("../img/dove.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "dove.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(55deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 55%);
@@ -228,7 +230,7 @@ body{
 }
 
 #esrog{
-    background: url("../img/esrog.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "esrog.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 1));
@@ -240,7 +242,7 @@ body{
 }
 
 #sea{
-    background: url("../img/sea.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "sea.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1) 66%);
@@ -261,7 +263,7 @@ body{
 }
 
 #shofar{
-    background: url("../img/shofar.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "shofar.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(25deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.3) 65%);
@@ -281,7 +283,7 @@ body{
 }
 
 #candles{
-    background: url("../img/candles.jpg") center center / cover no-repeat;
+    background: url($imgPrefix + "candles.jpg") center center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) 80%);
@@ -302,7 +304,7 @@ body{
 }
 
 #whale{
-    background: url("../img/whale.jpg") 80% center / cover no-repeat;
+    background: url($imgPrefix + "whale.jpg") 80% center / cover no-repeat;
 
     .contentContainer{
         background: linear-gradient(55deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.3) 35%);
