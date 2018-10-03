@@ -274,6 +274,19 @@ body {
   font-family: 'Special Elite', cursive;
   font-family: 'Halant', serif; }
 
+.viewOther {
+  border: 1px solid whitesmoke;
+  padding: 1vw;
+  font-size: 3vw;
+  width: 80vw;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none; }
+  .viewOther:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
 .viewInCollection {
   border: 1px solid whitesmoke;
   padding: 1vw;
@@ -334,6 +347,11 @@ body {
   #title h2 {
     font-size: 10vw;
     text-shadow: 5px 6px #333; }
+  #title h4 {
+    font-size: 4vw;
+    margin: 1vw 0; }
+  #title p {
+    font-size: 3vw; }
 
 .section {
   min-height: 56.25vw;

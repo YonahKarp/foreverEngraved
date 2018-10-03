@@ -267,6 +267,19 @@ a.unStyle {
 body {
   background: black; }
 
+.viewOther {
+  border: 1px solid whitesmoke;
+  padding: 1vw;
+  font-size: 3vw;
+  width: 80vw;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none; }
+  .viewOther:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+
 .viewInCollection {
   border: 1px solid whitesmoke;
   padding: 1vw;
