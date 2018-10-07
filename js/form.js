@@ -18,7 +18,7 @@ $(document).ready(function(){
         if(form.checkValidity()){
 
             $.ajax({
-                url: 'https://formspree.io/tsiporakarp@gmail.com',
+                url: 'https://formspree.io/artbytsipora@gmail.com',
                 type: 'post',
                 data: $("#contactForm").serialize(),
                 success: function(){
