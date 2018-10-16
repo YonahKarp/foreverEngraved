@@ -479,3 +479,7 @@ body {
     margin: -3vw -2vw; }
   #whale ul, #whale img {
     float: left; }
+
+.footer {
+  margin-top: 30px;
+  color: white; }

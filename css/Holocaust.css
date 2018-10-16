@@ -533,3 +533,7 @@ body {
   #zaidy .bottomImg {
     max-width: 50vw;
     float: right; }
+
+.footer {
+  margin-top: 30px;
+  color: white; }
