@@ -22,6 +22,8 @@ Templates.details = _.template(`
     <h2 class="detailsDetails">Details</h2>
     <hr>
     <div class="description"><%= currentPiece.description %></div>
+    <hr>
+    <h3 class="price">Price: <%= currentPiece.price %></h3>
     <div id="specsRegion"></div>
     <div class="contactBtn">Inquire About This Piece</div>
 
