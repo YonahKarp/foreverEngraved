@@ -9,6 +9,10 @@ body{
     background: black;
 }
 
+.content{
+    margin: 8px;
+}
+
 #nothing{
     font-family: 'Spectral SC', serif;
     font-family: 'Spectral', serif;
@@ -396,9 +400,4 @@ body{
         max-width: 50vw;
         float: right;
     }
-}
-
-.footer{
-    margin-top: 30px;
-    color: white;
 }

@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
    
+    //contact
     var contactModal = $("#contactModal")
     $(".contactUs").click(function(){
         contactModal.addClass("show");
@@ -8,18 +9,37 @@ $(document).ready(function(){
         $('.links ul').removeClass('open');
     })
 
-    $(".overlay").click(function(){
-        contactModal.removeClass("show");
+    var devContactModal = $("#devContactModal")
+    $(".contactDev").click(function(){
+        devContactModal.addClass("show");
+        $('#menu').removeClass('open');
+        $('.links ul').removeClass('open');
     })
 
-    $(".rplButton").click(function(e){
+    $(".overlay").click(function(){
+        contactModal.removeClass("show");
+        devContactModal.removeClass("show");
 
-        var form = document.forms[0];
+    })
+
+    $("#contactModal .rplButton").click(function(e){
+        var form = $("#contactForm")[0];
         
         if(form.checkValidity()){
             form.submit();
         }else{
-            $('input:invalid, textarea:invalid').addClass("attention");
+            $('#contactModal input:invalid, #contactModal textarea:invalid').addClass("attention");
+        }
+    });
+
+    $("#devContactModal .rplButton").click(function(e){
+
+        var form = $("#devContactForm")[0];
+        
+        if(form.checkValidity()){
+            form.submit();
+        }else{
+            $('#devContactModal input:invalid, #devContactModal textarea:invalid').addClass("attention");
         }
     });
 });

@@ -1,0 +1,28 @@
+<div class="footer">
+    <p>Website designed and developed by Yoni Karp.</p>
+    <p>Need a custom website? <span class="contactDev">Contact The developer</span></p>
+</div>
+
+<div id="devContactModal" class="contactModal">
+    <div class="overlay"></div>
+    <div class="form" >
+        <p class="centerTxt font20">Want a custom website? Let's discuss</p>
+        <div class="underline"></div>
+
+        <form action="https://formspree.io/karp.yoni@gmail.com" method="POST" id="devContactForm"> 
+            <input type="hidden" name="_next" value="#thankyou" />
+
+            <div>          
+                <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
+            </div>
+
+            <textarea name="message" placeholder="Message" required></textarea><span>*</span>
+            <!-- <input type="hidden" name="_next" value="#" /> -->
+            <input type="hidden" name="_subject" value="Job Request from Advertising: Forever Engraved" />
+            <div class="btnContainer">
+                    <div class="rplButton">Send</div>
+                    <div class ="rplCircle"></div>
+            </div>
+        </form>
+    </div>
+</div>

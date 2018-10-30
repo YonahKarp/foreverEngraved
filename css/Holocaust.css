@@ -1,4 +1,4 @@
-#contactModal .floating-label {
+.contactModal .floating-label {
   font-size: 15pt; }
 
 #header .links ul li a {
@@ -9,18 +9,18 @@
 
 /* adjust fonts */
 @media only screen and (max-width: 620px) {
-  #contactModal .floating-label {
+  .contactModal .floating-label {
     font-size: 12pt; } }
 
 @media only screen and (max-width: 450px) {
-  #contactModal .floating-label {
+  .contactModal .floating-label {
     font-size: 3.5vw; }
   .fontFine {
     font-size: 9pt; }
   #header .links ul li a {
     font-size: 5.5vw; } }
 
-#contactModal .floating-label {
+.contactModal .floating-label {
   font-size: 15pt; }
 
 #header .links ul li a {
@@ -31,25 +31,25 @@
 
 /* adjust fonts */
 @media only screen and (max-width: 620px) {
-  #contactModal .floating-label {
+  .contactModal .floating-label {
     font-size: 12pt; } }
 
 @media only screen and (max-width: 450px) {
-  #contactModal .floating-label {
+  .contactModal .floating-label {
     font-size: 3.5vw; }
   .fontFine {
     font-size: 9pt; }
   #header .links ul li a {
     font-size: 5.5vw; } }
 
-#contactModal.show .overlay {
+.contactModal.show .overlay {
   display: block; }
 
-#contactModal.show .form {
+.contactModal.show .form {
   transition: top .6s ease-in-out;
   top: 15%; }
 
-#contactModal .overlay {
+.contactModal .overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@
   background: rgba(17, 17, 17, 0.5);
   z-index: 10000; }
 
-#contactModal .form {
+.contactModal .form {
   position: fixed;
   top: -100%;
   left: 50%;
@@ -67,19 +67,19 @@
   z-index: 10001;
   display: block;
   width: 60%;
-  min-width: 400px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 3% 2% 3% 3%;
   border: 1px solid black;
   background: whitesmoke;
   color: #333;
   box-shadow: 10px 5px 5px rgba(17, 17, 17, 0.5); }
-  #contactModal .form .inputContainer {
+  .contactModal .form .inputContainer {
     position: relative; }
-  #contactModal .form textarea {
+  .contactModal .form textarea {
     border: 3px #aaa solid;
     border-right: 1px #eee solid; }
-  #contactModal .form input, #contactModal .form textarea, #contactModal .form select {
+  .contactModal .form input, .contactModal .form textarea, .contactModal .form select {
     display: inline;
     width: 90%;
     margin: 0 auto;
@@ -91,32 +91,32 @@
     margin-bottom: 10px;
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px; }
-  #contactModal .form input::placeholder, #contactModal .form textarea::placeholder {
+  .contactModal .form input::placeholder, .contactModal .form textarea::placeholder {
     color: #999999; }
-  #contactModal .form input::-ms-placeholder, #contactModal .form textarea::-ms-placeholder {
+  .contactModal .form input::-ms-placeholder, .contactModal .form textarea::-ms-placeholder {
     color: #999999; }
-  #contactModal .form input::-webkit-placeholder, #contactModal .form textarea::-webkit-placeholder {
+  .contactModal .form input::-webkit-placeholder, .contactModal .form textarea::-webkit-placeholder {
     color: #999999; }
-  #contactModal .form input[type=number]::-webkit-inner-spin-button,
-  #contactModal .form input[type=number]::-webkit-outer-spin-button {
+  .contactModal .form input[type=number]::-webkit-inner-spin-button,
+  .contactModal .form input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
-  #contactModal .form input[required] ~ span, #contactModal .form textarea[required] ~ span {
+  .contactModal .form input[required] ~ span, .contactModal .form textarea[required] ~ span {
     display: none; }
-  #contactModal .form input[required]:invalid ~ span, #contactModal .form textarea[required]:invalid ~ span {
+  .contactModal .form input[required]:invalid ~ span, .contactModal .form textarea[required]:invalid ~ span {
     display: inline;
     color: red;
     padding-left: 10px;
     vertical-align: top; }
-  #contactModal .form textarea {
+  .contactModal .form textarea {
     resize: none;
     height: 70px; }
-  #contactModal .form .btnContainer {
+  .contactModal .form .btnContainer {
     height: 40px;
     width: 90%;
     overflow: hidden;
     display: block; }
-  #contactModal .form .rplButton {
+  .contactModal .form .rplButton {
     margin: 0 auto 25px;
     color: white;
     background-color: teal;
@@ -126,22 +126,22 @@
     text-align: center;
     line-height: 40px; }
 
-#contactModal .attention:invalid {
+.contactModal .attention:invalid {
   background-color: #dd3a3a !important; }
-  #contactModal .attention:invalid ~ .floating-label {
+  .contactModal .attention:invalid ~ .floating-label {
     background-color: #dd3a3a !important;
     color: white; }
-  #contactModal .attention:invalid ~ label {
+  .contactModal .attention:invalid ~ label {
     color: #dd3a3a !important; }
 
-#contactModal input:focus ~ .floating-label,
-#contactModal input:not(:focus):valid ~ .floating-label {
+.contactModal input:focus ~ .floating-label,
+.contactModal input:not(:focus):valid ~ .floating-label {
   top: -5px;
   font-size: 10px;
   opacity: 1;
   padding: 0 5px; }
 
-#contactModal .floating-label {
+.contactModal .floating-label {
   position: absolute;
   display: inline-block;
   color: #777;
@@ -149,6 +149,37 @@
   left: 20px;
   top: 7px;
   transition: 0.2s ease top, 0.2s ease font-size; }
+
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  clear: both; }
+
+body {
+  margin: 0; }
+
+.half {
+  width: 50%;
+  display: inline-block;
+  padding: 15px; }
+
+.half {
+  width: 60%;
+  display: inline-block;
+  padding: 15px; }
+
+.centerTxt {
+  text-align: center; }
+
+.footer {
+  margin-top: 30px;
+  padding: 15px;
+  color: white;
+  background: #323232; }
+  .footer .contactDev {
+    color: lightseagreen;
+    cursor: pointer; }
 
 a.unStyle {
   text-decoration: none;
@@ -266,6 +297,9 @@ a.unStyle {
 
 body {
   background: black; }
+
+.content {
+  margin: 8px; }
 
 #nothing {
   font-family: 'Spectral SC', serif;
@@ -533,7 +567,3 @@ body {
   #zaidy .bottomImg {
     max-width: 50vw;
     float: right; }
-
-.footer {
-  margin-top: 30px;
-  color: white; }

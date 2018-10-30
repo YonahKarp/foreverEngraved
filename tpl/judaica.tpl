@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124592097-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-124592097-1');
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="icon" type="image/png" href="./img/icon.png">
+    @include head.incl
     <title>Judaica Art by Tsipora - Forever Alive</title>
     <meta name="description" content="Forever Alive: a judaica stone sculpture collection by Tsipora Karp">
 
@@ -21,24 +10,7 @@
 </head>
 <body>
 
-    <div id="header" class="header2">
-        <div class="links">
-            <ul>
-                <li><a class="unStyle" href ="./index.html">Holocaust</a></li><li>
-                    <a class="unStyle" href ="./judaica.html">Judaica</a></li><li>
-                    <a class="unStyle" href ="./gallery.html">Gallery</a></li><li>
-                    <a class="unStyle" href ="./about.html">About the Artist</a></li><li class="contactUs">
-                    <a class="unStyle" href ="#contact" >Contact</a></li>
-            </ul>
-    
-            <div id="menu">
-                <span class="l1"></span>
-                <span class="l2"></span>
-                <span class="l3"></span>
-            </div>
-        </div>
-        <a href="./index.html"><img class="logo" src = "./img/logo.png" alt=""/></a>
-    </div>
+    @include header.incl
         
     <div class="content">
         <div id="title">
@@ -232,60 +204,8 @@
         <a class="viewOther" href="./index.html">View Holocaust Sculptures</a>
     </div>
 
-    <div class="footer">
-        <p>Website designed and developed by Yoni Karp.</p>
-        <p>Need a custom website? <span class="contactDev">Contact The developer</span></p>
-    </div>
-    
-    <div id="devContactModal" class="contactModal">
-        <div class="overlay"></div>
-        <div class="form" >
-            <p class="centerTxt font20">Want a custom website? Let's discuss</p>
-            <div class="underline"></div>
-    
-            <form action="https://formspree.io/karp.yoni@gmail.com" method="POST" id="devContactForm"> 
-                <input type="hidden" name="_next" value="#thankyou" />
-    
-                <div>          
-                    <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
-                </div>
-    
-                <textarea name="message" placeholder="Message" required></textarea><span>*</span>
-                <!-- <input type="hidden" name="_next" value="#" /> -->
-                <input type="hidden" name="_subject" value="Job Request from Advertising: Forever Engraved" />
-                <div class="btnContainer">
-                        <div class="rplButton">Send</div>
-                        <div class ="rplCircle"></div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div id="contactModal" class="contactModal">
-        <div class="overlay"></div>
-        <div class="form" >
-            <p class="centerTxt font20">Interested in a piece? Let's discuss</p>
-            <div class="underline"></div>
-    
-            <form action="https://formspree.io/artbytsipora@gmail.com" method="POST" id="contactForm"> 
-                <input type="hidden" name="_next" value="#thankyou" />
-    
-                <div>          
-                    <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
-                </div>
-                <div>
-                    <input type="text" name="name" placeholder="Full Name" required /><span>*</span>
-                </div>
-                <input type="number" name="phone" placeholder="Phone" maxlength="20"/>                        
-                <textarea name="message" placeholder="Message" required></textarea><span>*</span>
-                <!-- <input type="hidden" name="_next" value="#" /> -->
-                <input type="hidden" name="_subject" value="I want to learn more about your art" />
-                <div class="btnContainer">
-                        <div class="rplButton">Send</div>
-                        <div class ="rplCircle"></div>
-                </div>
-            </form>
-        </div>
-    </div>
+    @include footer.incl
+    @include contact.incl
 
     <script src="./lib/jquery.js"></script>
     <script src="./js/form.js"></script>

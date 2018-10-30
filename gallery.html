@@ -3,22 +3,23 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124592097-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-124592097-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-124592097-1');
     </script>
-  <meta charset="UTF-8">
-  <title>Judaica Art by Tsipora - Gallery</title>
-  <meta name="description" content="All sculptures by Tsipora Karp with descriptions and details">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    
+    <title>Judaica Art by Tsipora - Gallery</title>
+    <meta name="description" content="All sculptures by Tsipora Karp with descriptions and details">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-   
-  <link rel="icon" type="image/png" href="./img/icon.png">
-  <link rel="stylesheet" href="./css/lightslider.css">
-  <link rel="stylesheet" href="./css/gallery.css">
-  <link href="https://fonts.googleapis.com/css?family=Halant|Lora:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Halant|Lora:400,700" rel="stylesheet">
 
 </head>
 <body>
@@ -32,7 +33,7 @@
                     <a class="unStyle" href ="./about.html">About the Artist</a></li><li class="contactUs">
                     <a class="unStyle" href ="#contact" >Contact</a></li>
             </ul>
-
+    
             <div id="menu">
                 <span class="l1"></span>
                 <span class="l2"></span>
@@ -42,38 +43,34 @@
         <a href="./index.html"><img class="logo" src = "./img/logo.png" alt=""/></a>
     </div>
 
-
-
     <div id="app" class="content"></div>
 
-
-
-    <div id="contactModal">
-        <div class="overlay"></div>
-        <div class="form" >
-            <p class="centerTxt font20">Interested in a piece? Let's discuss</p>
-            <div class="underline"></div>
-
-            <form action="https://formspree.io/artbytsipora@gmail.com" method="POST" id="contactForm"> 
-                <input type="hidden" name="_next" value="#thankyou" />
-
-                <div>          
-                    <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
-                </div>
-                <div>
-                    <input type="text" name="name" placeholder="Full Name" required /><span>*</span>
-                </div>
-                <input type="number" name="phone" placeholder="Phone" maxlength="20"/>                        
-                <textarea name="message" placeholder="Message" required></textarea><span>*</span>
-                <!-- <input type="hidden" name="_next" value="#" /> -->
-                <input type="hidden" name="_subject" value="I want to learn more about your art" />
-                <div class="btnContainer">
-                        <div class="rplButton">Send</div>
-                        <div class ="rplCircle"></div>
-                </div>
-            </form>
-        </div>
-    </div>
+   <div id="contactModal" class="contactModal">
+       <div class="overlay"></div>
+       <div class="form" >
+           <p class="centerTxt font20">Interested in a piece? Let's discuss</p>
+           <div class="underline"></div>
+   
+           <form action="https://formspree.io/artbytsipora@gmail.com" method="POST" id="contactForm"> 
+               <input type="hidden" name="_next" value="#thankyou" />
+   
+               <div>          
+                   <input type="email" name="_replyto" placeholder="Email" required/><span>*</span>
+               </div>
+               <div>
+                   <input type="text" name="name" placeholder="Full Name" required /><span>*</span>
+               </div>
+               <input type="number" name="phone" placeholder="Phone" maxlength="20"/>                        
+               <textarea name="message" placeholder="Message" required></textarea><span>*</span>
+               <!-- <input type="hidden" name="_next" value="#" /> -->
+               <input type="hidden" name="_subject" value="I want to learn more about your art" />
+               <div class="btnContainer">
+                       <div class="rplButton">Send</div>
+                       <div class ="rplCircle"></div>
+               </div>
+           </form>
+       </div>
+   </div>
 
     <script src="./lib/jquery.js"></script>
     <script src="./lib/underscore.js"></script>

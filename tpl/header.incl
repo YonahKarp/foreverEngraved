@@ -1,0 +1,18 @@
+<div id="header" class="header2">
+    <div class="links">
+        <ul>
+            <li><a class="unStyle" href ="./index.html">Holocaust</a></li><li>
+                <a class="unStyle" href ="./judaica.html">Judaica</a></li><li>
+                <a class="unStyle" href ="./gallery.html">Gallery</a></li><li>
+                <a class="unStyle" href ="./about.html">About the Artist</a></li><li class="contactUs">
+                <a class="unStyle" href ="#contact" >Contact</a></li>
+        </ul>
+
+        <div id="menu">
+            <span class="l1"></span>
+            <span class="l2"></span>
+            <span class="l3"></span>
+        </div>
+    </div>
+    <a href="./index.html"><img class="logo" src = "./img/logo.png" alt=""/></a>
+</div>

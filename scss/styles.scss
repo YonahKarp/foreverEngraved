@@ -2,6 +2,8 @@
 
 .clearfix{clear: both;}
 
+body{ margin: 0}
+
 .half{
     width: 50%;
     display: inline-block;
@@ -16,4 +18,16 @@
 
 .centerTxt{
     text-align: center;
+}
+
+.footer{
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+    background: rgb(50,50,50);   
+
+    .contactDev{
+        color: lightseagreen;
+        cursor: pointer;
+    }
 }

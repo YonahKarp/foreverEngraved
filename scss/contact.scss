@@ -1,5 +1,5 @@
 @import 'constants';
-#contactModal{
+.contactModal{
   
     &.show{    
         
@@ -35,7 +35,7 @@
         z-index: 10001;
         display: block;
         width: 60%;
-        min-width: 400px;
+        min-width: 320px;
         margin: 0 auto;
         padding: 3% 2% 3% 3%;
         border: 1px solid black;
