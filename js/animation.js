@@ -10,8 +10,9 @@ $(document).ready(function(){
 
     //setTimeout(checkForAnimation(section),1)
 
-    if(location.hash)
-        $(location.hash).parent().removeClass('beforeAnimated')
+    if(location.hash){
+        $(location.hash).removeClass('beforeAnimated')
+    }
         
     $(window).scroll(function(){
         var newTime = new Date().getTime()

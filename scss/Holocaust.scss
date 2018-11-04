@@ -1,4 +1,5 @@
 @import './header.scss';
+@import './painting.scss';
 
 $imgPrefix: "../img/bgs/";
 
@@ -41,6 +42,7 @@ body{
 .viewInCollection{
     border: 1px solid whitesmoke;
     padding: 1vw;
+    margin-right: .5vw;
     font-size: 2vw;
     width: 20vw;
     text-align: center;
@@ -235,6 +237,14 @@ body{
                 display: inline-block;
                 width: 32%;
                 vertical-align: top;
+            }
+        }
+
+        .links{
+            margin: 3vw 0;
+            .viewInCollection{
+                margin-right: 0;
+                font-size: 1.9vw
             }
         }
     }

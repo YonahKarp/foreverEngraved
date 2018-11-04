@@ -123,10 +123,16 @@
                     <div>
                     <p>
                         Many Jews fled to nearby forests to escape the grasp of the Nazis.                </p>
-                        
+                    <div class="links">
                         <a href="./gallery.html#id-forest"  class="viewInCollection">
                             View in Gallery <span> > </span> 
                         </a>
+                    </div>
+                    <div class="links">
+                        <a href="#paintings"  class="viewInCollection">
+                            View Accompanying Painting <span> > </span> 
+                        </a>
+                    </div>
                     </div>
                         <img src="./img/mid-res2/tree.png"/>
                     <p>
@@ -153,6 +159,9 @@
                     </p>
                     <a href="./gallery.html#id-book"  class="viewInCollection">
                         View in Gallery <span> > </span> 
+                    </a>
+                    <a href="#paintings"  class="viewInCollection">
+                        View Accompanying Painting <span> > </span> 
                     </a>
                     
                 </div>
@@ -296,8 +305,11 @@
                     <a href="./gallery.html#id-rose"  class="viewInCollection">
                         View in Gallery <span> > </span> 
                     </a>
-                </div>
 
+                    <a href="#paintings"  class="viewInCollection">
+                        View Accompanying Painting <span> > </span> 
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -382,6 +394,24 @@
         </div>
 
         <a class="viewOther" href="./judaica.html">View Judaica Sculptures</a>
+
+        <span id="paintings" class="anchor"></span>
+        <div class="section">
+            <div class="contentContainer">
+                <h1>Paintings</h1>
+
+                <div class="paintings">
+                    <div class="frame"><img src="./img/paintings-mid-res/rose.jpg"></div>
+                    <div class="frame"><img src="./img/paintings-mid-res/hiding.jpg"></div>
+                    <div class="frame"><img src="./img/paintings-mid-res/book.jpg"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <a class="viewOther" href="./judaica.html#paintings">View Judaica Paintings</a>
+
+
     </div>
 
     @include footer.incl

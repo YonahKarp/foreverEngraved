@@ -114,6 +114,16 @@ body{
 
 }
 
+#bottomSlide{
+    display: none;
+
+    .lSSlideWrapper &{
+        display: block;
+    }
+
+}
+
+
 #sculptures, #bottomSlide{
     border-top: 1px solid #333;
     background: black;

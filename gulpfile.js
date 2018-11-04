@@ -21,7 +21,7 @@ function buildTemplates(done) {
 }
 
 function watchScss(){
-    var command = "node-sass -w scss/ -o css/";
+    var command = "node-sass -w scss/ -o css/ --output-style compressed";
     var watcher = exec(command, function(err, stdout, stderr){
         handleConsoleOutput(err, stdout, stderr)
     });
