@@ -85,14 +85,6 @@
             return {
                 "data-thumb": "img/thumbs/" + this.model.get("url")
             }
-        },
-
-        events: {
-            "click" : "test"
-        },
-
-        test: function(){
-            console.log("test " + this.model.get("url"))
         }
     });
     var ImagesView = Mn.CollectionView.extend({
@@ -280,7 +272,7 @@ function getData(currentId){
                 id: "shoes",
                 title: "The Shoes of Rememberance",
                 description: "Thousands of pairs all covered the feet of Jewish men, women and children before they were sent to the Nazi gas chambers. Chilling evidence of so many people obeying the command to remove their footwear, likely not knowing what was about to happen to them",
-                images:[{url:"Shoes.jpg"},{url:"Shoes2.jpg"},{url:"Shoes3.jpg"}],
+                images:[{url:"Shoes.jpg"},{url:"Shoes2.jpg"},{url:"shoes3.jpg"}],
                 price: "$25,000",
                 specs: [
                     {
