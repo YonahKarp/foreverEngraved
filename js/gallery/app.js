@@ -108,6 +108,23 @@
         }
     })
 
+    var PrintImageView = Mn.View.extend({
+        template: Templates.printImage,
+        tagName: "li",
+
+        initialize: function(){
+            console.log(this.model.get("url"))
+        }
+    });
+
+    var PrintImagesView = Mn.CollectionView.extend({
+        tagName: "ul",
+        childView: PrintImageView,
+        initialize: function(){
+            console.log(this)
+        }
+    }) 
+
     var ImageContainerView = Mn.View.extend({
         template: Templates.imageContainer,
         regions: {
@@ -159,6 +176,8 @@
         regions: {
             detailsRegion: "#detailsRegion",
             imageContainerRegion:  "#imageContainerRegion",
+            printImageRegion:  "#printImageRegion",
+
         },
 
         initialize: function(){
@@ -169,6 +188,10 @@
         onRender: function(){
             this.getRegion("detailsRegion").show(new DetailsView({model: this.model}));
             this.getRegion("imageContainerRegion").show(new ImageContainerView({model: this.model}));
+            this.getRegion("printImageRegion").show(new PrintImagesView(
+                {collection: new Backbone.Collection(this.model.get("currentPiece").images)}
+            ));
+
         },
 
         updateModel: function(model){

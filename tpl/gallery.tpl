@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./css/lightslider.css">
     <link rel="stylesheet" href="./css/gallery.css">
-    <link href="https://fonts.googleapis.com/css?family=Halant|Lora:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Halant|Lora:400,700|Tangerine|Allura" rel="stylesheet">
 
 </head>
 <body>
@@ -16,6 +16,10 @@
     @include header.incl
 
     <div id="app" class="content"></div>
+
+    <div id="about">
+        @include aboutContent.incl
+    </div>
 
    @include contact.incl
 

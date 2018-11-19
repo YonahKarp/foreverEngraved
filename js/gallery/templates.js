@@ -8,6 +8,7 @@ Templates.gallery = _.template(`
 
 Templates.currentPiece = _.template(`
     <h2 class="title"><%= currentPiece.title %></h2>
+    <div id="printImageRegion" class="hidden"></div>
     <div class="flexContainer">
         <div id="detailsRegion" class="half details"></div><div id="imageContainerRegion" class="imagesContainer half"></div>
     </div>
@@ -38,6 +39,14 @@ Templates.specs = _.template(`
 
 Templates.image = _.template(`
     <div class="slide" style="background: url(./img/mid-res2/<%= url %>) center center/contain no-repeat"></div>
+`);
+
+Templates.printContainer = _.template(`
+    <div id="printImagesRegion"></div>
+`)
+
+Templates.printImage = _.template(`
+    <img class="printImg" src="./img/hi-res/<%= url %>"/>
 `);
 
 Templates.sideImage = _.template(`

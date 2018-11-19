@@ -1,5 +1,7 @@
 @import './header.scss';
 @import './styles.scss';
+@import './print.scss';
+@import './about.scss';
 
 
 body{
@@ -231,4 +233,9 @@ body{
     cursor: pointer;
 
     padding: 15px 25px;
+}
+
+#about{
+    display: none;
+    text-align: center;
 }
