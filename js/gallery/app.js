@@ -112,16 +112,16 @@
         template: Templates.printImage,
         tagName: "li",
 
-        initialize: function(){
-            console.log(this.model.get("url"))
+        templateContext: function(){
+            return {title: this.options.title}
         }
     });
 
     var PrintImagesView = Mn.CollectionView.extend({
         tagName: "ul",
         childView: PrintImageView,
-        initialize: function(){
-            console.log(this)
+        childViewOptions: function(){
+            return {title: this.options.title}
         }
     }) 
 
@@ -189,7 +189,10 @@
             this.getRegion("detailsRegion").show(new DetailsView({model: this.model}));
             this.getRegion("imageContainerRegion").show(new ImageContainerView({model: this.model}));
             this.getRegion("printImageRegion").show(new PrintImagesView(
-                {collection: new Backbone.Collection(this.model.get("currentPiece").images)}
+                {
+                    title: this.model.get("currentPiece").title,
+                    collection: new Backbone.Collection(this.model.get("currentPiece").images)
+                }
             ));
 
         },

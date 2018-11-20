@@ -46,6 +46,7 @@ Templates.printContainer = _.template(`
 `)
 
 Templates.printImage = _.template(`
+    <h2 class="printTitle"><%= title %> <span class="smallerTitle"> by <span class="signature">Tsipora Karp </span></span></h2>
     <img class="printImg" src="./img/hi-res/<%= url %>"/>
 `);
 

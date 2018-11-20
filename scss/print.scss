@@ -7,8 +7,8 @@
         list-style: none;;
     }
 
-    li:not(:first-child) img{
-        margin-top: 7.5vh;
+    li{
+        page-break-after: always;
     }
 
     img{
@@ -21,6 +21,13 @@
     page-break-after: always;
 }
 
+.tangerine, .allura{
+    position: absolute;
+    top: -100px;
+    opacity: 0.001;
+}
+.tangerine{font-family: 'Tangerine', cursive;}
+.alurra{font-family: 'Allura', cursive;}
 
 
 
@@ -28,7 +35,7 @@
 
     @page{
         size: auto;
-        margin: 35px 15px 15px;
+        margin: 15px;
     }
 
     body{
@@ -51,12 +58,29 @@
         display: block !important;
     }
 
-    .title, .detailsDetails{
+    .printTitle, .detailsDetails, .detailsTitle{
         display: block !important;
+    }
+
+    .printTitle{
+        font-family: 'Halant', serif;
+
+        .smallerTitle{
+            font-size: 22pt;
+            display: inline-block;
+
+            .signature{
+                font-family: 'Allura', cursive;
+            }
+        }
     }
 
     .detailsTitle{
         display: none !important;
+    }
+
+    .fontLgTitle{
+        color: black !important;
     }
 
     .details, .imagesContainer{

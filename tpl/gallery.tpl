@@ -20,6 +20,7 @@
     <div id="about">
         @include aboutContent.incl
     </div>
+    <span class="allura">.</span><span class="tangerine">.</span>
 
    @include contact.incl
 
