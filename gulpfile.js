@@ -9,7 +9,7 @@ gulp.task('tpl', buildTemplates);
 
 function defaultTask(done) {
     // gulp.watch('scss/*.scss', ['scss']);
-    gulp.watch('tpl/*', ['tpl']);
+    gulp.watch('tpl/*', gulp.series('tpl'));
     watchScss();
 }
 
