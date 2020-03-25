@@ -4,7 +4,7 @@
 
     @include head.incl
     <title>Judaica Art by Tsipora - Videos</title>
-    <meta name="description" content="About the artist: Tsipora karp has an extensive art education, including stone sculpture (Ailene Fields), clay (Philip Faraut), and oil painting (Marvin Mattelson). She also has an art degree from FIT">
+    <meta name="description" content="Art classes By Tsipora Karp online: A passover project for all ages">
     <link rel="stylesheet" href="./css/videos.css">
     <link href="https://fonts.googleapis.com/css?family=Halant|Tangerine|Allura|Lora:400,700" rel="stylesheet">
 
