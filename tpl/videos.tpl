@@ -23,5 +23,6 @@
     <script src="./lib/jquery.js"></script>
 
     <script src="./js/form.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 </html>
